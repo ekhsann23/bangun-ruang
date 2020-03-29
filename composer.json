@@ -1,0 +1,35 @@
+{
+    "name": "ekhsann23/bangun-ruang",
+    "description": "Library sederhana untuk menghitung bangun ruang",
+    "type": "library",
+    "version": "1.0.0",
+    "require": {
+        "php": "^7.2.5",
+        "illuminate/support": "^7.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ekhsann23",
+            "email": "hardian.azmi91@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Ekhsann23\\BangunRuang\\" :"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ekhsann23\\BangunRuang\\Providers\\BangunRuangServiceProvider"
+            ],
+            "aliases": {
+            "PersegiPanjang": "Ekhsann23\\BangunRuang\\Facades\\PersegiPanjang"
+            }
+        }
+    }
+    
+}
